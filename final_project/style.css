@@ -1,0 +1,481 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+    v2.0 | 20110126
+    License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+    .cf:before,
+    .cf:after {
+        content: " "; /* 1 */
+        display: table; /* 2 */
+    }
+    
+    .cf:after {
+        clear: both;
+    }
+    
+    /**
+    * For IE 6/7 only
+    * Include this rule to trigger hasLayout and contain floats.
+    */
+    .cf {
+        *zoom: 1;
+    }
+    
+
+/* css reset */
+
+
+
+body{
+    background-image: url(img/green_dust_scratch.png);
+    font: 16px/28px arial, sans-serif;
+    color: #333;
+}
+.container{
+    background-color: #ffffff;
+    width: 1250px;
+    margin: auto;
+}
+
+/* login */
+
+    .tulisan_login{
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .kotak_login{
+        border-radius: 7px;
+        width: 350px;
+        background: white;
+        margin: 80px auto;
+        padding: 30px 20px;
+    }
+
+    label{
+        font-size: 11pt;
+    }
+
+    .form_login{
+        box-sizing : border-box;
+        width: 100%;
+        padding: 10px;
+        font-size: 11pt;
+        margin-bottom: 20px;
+    }
+
+    .tombol_login{
+        background: #89d9e9;
+        color: white;
+        font-size: 11pt;
+        width: 100%;
+        border: none;
+        border-radius: 3px;
+        padding: 10px 20px;
+    }
+
+    .link{
+        color: #232323;
+        text-decoration: none;
+        font-size: 10pt;
+    }
+
+/* login akhir */
+
+
+.header {
+    padding: 30px;
+    background-color: #D9EEF2;
+}
+
+.header .judul {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.header ul li{
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.header a{
+    text-decoration: none;
+    padding: 3px;
+}
+
+.header .akun{
+    float: right;
+    background-color: #125ec2;
+    padding: 10px 5px 5px;
+    position: relative;
+    left: -15px;
+    color: #fff;
+    border-radius: 7px;
+}
+
+.header .akun img {
+    position: relative;
+    top: 9px;
+    margin-right: 3px;
+    border-radius: 50%;
+}
+
+.header .akun li {
+    margin-top: -9px;
+} 
+.container .akun .uname a{
+    color: white;
+}
+
+.container .akun .uname a:hover{
+    background-color: rgba(255,0,0,0.0);;
+}
+
+.header .akun .lokot{
+    margin-bottom: 7px;
+    margin-left: -3px;
+}
+
+.container .akun .lokot a {
+    color: white;
+}
+
+.container .akun .lokot a:hover {
+    background-color:#f05454;
+    border-radius: 5px;
+}
+
+.menu {
+    background-color:  #125ec2;
+    display: inline-block;
+    padding: 10px 16px;
+    color: white;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.menu a {
+    color: white;
+}
+
+.active, .menu:hover {
+    background-color: #f05454;
+    color: white;
+}
+
+.akses {
+    float: right;
+    background-color: #125ec2;
+    display: inline-block;
+    padding: 11px 16px 12px;
+    left: -20px;
+    position: relative;
+    color: white;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.active, .akses:hover {
+    background-color: #f05454;
+    color: white;
+}
+
+.akses a {
+    color: white;
+}
+
+.akses .belanja {
+    text-align: center;
+    width: 28px;
+    background-color: rgba(0,0,0,0.2);;
+    border-radius: 50%;
+    margin-right: 5px;
+    float: left;
+}
+
+.container .main{
+    min-height: 500px;
+}
+
+.container .main .profile {
+    width: 200px;
+    margin: auto;
+}
+
+.container .main .profile img{
+    margin-top: 33px;
+    margin-bottom: -33px;
+    width: 100%;
+}
+
+.container .main .salam_main{
+    margin-top: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+hr{
+    width: 250px;
+    border-top: 3px solid #333;
+}
+
+.container .main .teks {
+    padding: 5px 40px;
+    text-align: justify;
+}
+
+.container .main .gambar_image{
+    height:340px;
+    background-image: url(img/gambar_image.jpg);
+    background-size: cover;
+    background-position: 0 -215px;
+}
+
+.content {
+    padding: 40px;
+}
+
+.content h2{
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.content .penulis {
+    font-size: 14px;
+}
+
+.content .penulis a{
+    color:rgb(245, 89, 71);
+    text-decoration: none;
+}
+
+.content p{
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.main-galery{
+    padding: 50px;
+}
+.gallery {
+    margin: 3px 4px;
+    display: inline-block;
+    transition: transform .2s;
+}
+
+.gallery:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5); 
+}
+
+.footer{
+    background-color: #333;
+    padding: 15px;
+}
+
+.footer .copy{
+    color: #eaeaea;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* data user */
+.main .dataku{
+    border-radius: 7px;
+    padding: 30px;
+    width: 670px;
+    height: fit-content;
+    background-color: rgb(255, 185, 177);
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .dataku .foto_profile{
+    width: 200px;
+    float: left;
+    margin-right: 20px;
+}
+
+.main .dataku .foto_profile img{
+    width: 100%;
+}
+
+.main .dataku .datanya{
+    float: right;
+    vertical-align: middle;
+}
+
+.main .dataku table{
+    font-size: 20px;
+    margin: auto;
+}
+
+.tombol_saya {
+    width: 200px;
+    margin: 30px auto 10px;
+}
+
+.tombol{
+    padding:5px 10px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+.satu{
+    background: #ff0000; color: #fff;
+}
+.satu:hover{
+    background: #ff9999; color: #fff;
+}
+.dua{
+    background: blue; color: #fff;
+}
+.dua:hover{
+    background: #6666ff; color: #fff;
+}
+/* data user end */
+.user {
+    margin-bottom: 77px;
+}
+
+.alert_file{
+    color: red;
+    font-style: italic;
+    font-size: 15px;
+}
+
+
+/* data buku */
+.main div.kotak_buku {
+    border: 2px solid rgb(68, 68, 68);
+    margin: 30px 170px;
+}
+
+.main .kotak_buku img {
+    float: left;
+    margin: 20px 20px 20px 20px;
+    width: 200px;
+}
+
+.main .kotak_buku table {
+    margin-top: 65px;
+    margin-left: 20px;
+}
+
+.main .kotak_buku td {
+    padding: 10px;
+    font-size: 23px;
+}
+
+.main .kotak_buku .btn-buku {
+    float: right;
+    background-color: #125ec2;
+    display: inline-block;
+    padding: 10px;
+    left: -20px;
+    margin-right: 10px;
+    position: relative;
+    border-radius: 7px;
+    cursor: pointer;
+} 
+
+.main .kotak_buku .btn-buku a {
+    color: white;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+
+.main .kotak_buku .btn-buku:hover {
+    background-color: #f05454;
+    color: white;
+}
+
+.btn-tambah {
+    background-color: #125ec2;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 30px;
+    margin-left: 170px;
+    position: relative;
+    border-radius: 7px;
+    cursor: pointer;
+} 
+
+.btn-tambah:hover{
+    background-color: #f05454;
+    color: white;
+}
+
+.btn-tambah a {
+    color: white;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+
+.main .buku {
+    margin-top: 70px;
+}
+
+.main .buku h1.total{
+    font-size: 20px; 
+    float:right; 
+    margin-top: 20px;
+}
